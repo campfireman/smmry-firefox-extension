@@ -1,0 +1,1 @@
+zip -r -FS ./dist/release.xpi * --exclude '*.git*' '*.sh'
