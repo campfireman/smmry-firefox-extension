@@ -1,5 +1,4 @@
 function openPage() {
-    console.log("hello")
     browser.tabs.query({ currentWindow: true, active: true })
         .then((tabs) => {
             let url = tabs[0].url;
