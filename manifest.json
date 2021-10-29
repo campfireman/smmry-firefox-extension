@@ -8,7 +8,8 @@
     "96": "icons/logo-96.png"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "background": {
     "scripts": [
@@ -30,6 +31,9 @@
       "16": "icons/logo-16.png",
       "32": "icons/logo-32.png"
     }
+  },
+  "options_ui": {
+    "page": "options.html"
   },
   "browser_specific_settings": {
     "gecko": {
