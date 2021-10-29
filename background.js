@@ -8,7 +8,7 @@ function onGot(settings) {
     browser.tabs.query({ currentWindow: true, active: true })
         .then((tabs) => {
             let url = tabs[0].url;
-            sm_length = settings.summary_length !== 'undefined' ? DEFAULT_SM_LENGTH : settings.summary_length;
+            sm_length = settings.summary_length === undefined ? DEFAULT_SM_LENGTH : settings.summary_length;
             browser.tabs.create({
                 url: "https://smmry.com/" + url + "#&SM_LENGTH=" + sm_length
             });
